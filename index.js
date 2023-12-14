@@ -9,22 +9,16 @@ function startTyping() {
       i++;
     } else {
       clearInterval(typingInterval);
-      setTimeout(startTyping, 30000); // Restart typing after 30 seconds
+      setTimeout(startTyping, 30000); 
     }
   }
 
-  const typingInterval = setInterval(typeWriter, 150); // Typing speed (adjust as needed)
+  const typingInterval = setInterval(typeWriter, 150);
 }
 
-// Start the typing effect after the page loads
+
 window.onload = function() {
   startTyping();
 };
 
 
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth' 
-  });
-}
