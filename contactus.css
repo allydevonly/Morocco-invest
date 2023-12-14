@@ -1,0 +1,95 @@
+/* Reset default browser styles */
+body,
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color:#515ada;
+}
+
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background: rgb(7,7,7);
+background: linear-gradient(25deg, rgba(7,7,7,1) 0%, rgba(39,36,37,1) 72%);
+
+
+  color: white;
+
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  max-width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #81f357;
+  color:black;
+  border: none;
+  font-weight: 600;
+  padding: 10px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

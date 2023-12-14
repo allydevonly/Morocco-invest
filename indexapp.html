@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="indexapp.css">
+  <title>beta version</title>
+</head>
+<body>
+  
+
+  <div class="overlay" id="overlay">
+    <div class="popup">
+      <h1 id="message">Welcome!</h1>
+      <button id="nextBtn">Continue</button>
+    </div>
+    </div>
+
+ 
+    <div id="category1">
+      <h3>Choose Industry</h3>
+      <ul>
+        <li onclick="showDescription('Tourism')">Tourism</li>
+        <li onclick="showDescription('Healthcare')">Healthcare and Pharmaceuticals</li>
+        <li onclick="showDescription('Agriculture')">Agriculture and Agribusiness</li>
+      </ul>
+      <p id="description"></p>
+    </div>
+    
+    <div id="category2" style="display: none;">
+      <h3>Choose Risk Level</h3>
+      <ul>
+        <li onclick="showDescription('High')">High Risk</li>
+        <li onclick="showDescription('Low')">Low Risk</li>
+        <li onclick="showDescription('Medium')">Medium Risk/Moderate Risk</li>
+      </ul>
+      <p id="description2"></p>
+    </div>
+    
+    <div id="category3" style="display: none;">
+      <h3>Choose Budget</h3>
+      <ul>
+        <li onclick="showDescription('100k-500k')">$100,000 to $500,000</li>
+        <li onclick="showDescription('500k-800k')">$500,000 to $800,000</li>
+        <li onclick="showDescription('800k-1m')">$800,000 to $1 million</li>
+      </ul>
+      <p id="description3"></p>
+    </div>
+    
+
+
+
+
+  
+  <script src="indexapp.js"></script>
+
+
+</body>
+</html>

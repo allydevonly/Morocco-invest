@@ -19,7 +19,7 @@ nav {
   
 
   
-  background-color:azure;
+  background-color:white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,4 +239,39 @@ font-family: 'Red Hat Display', sans-serif;
 
 .footer-links a:hover {
   color: #f7f7f7;
+}
+
+
+
+.gobackup{
+  display: flex;
+  justify-content: center;
+}
+
+
+.scroll-btn {
+  
+  bottom: 200px;
+  right: 20px;
+  background-color: #00000000;
+  color: white;
+  border: none;
+  border-radius: 30%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999;
+  margin-top: -40px;
+  
+}
+
+.scroll-btn , i {
+  color: black;
+}
+
+
+
+.scroll-btn:hover {
+  background-color: #0000001a;
 }

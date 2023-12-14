@@ -20,3 +20,11 @@ function startTyping() {
 window.onload = function() {
   startTyping();
 };
+
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' 
+  });
+}
