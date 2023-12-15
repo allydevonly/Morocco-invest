@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../dist/output.css">
+
   <title>Document</title>
   <style>
     /*
@@ -665,6 +665,27 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
   </style>
 </head>
 <body>
@@ -675,17 +696,17 @@ video {
       <label class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelA">
         <h1>Tourism</h1>
         <p>Discover the magic of new cultures, ignite your curiosity, and create lifelong memories through the adventure of tourism.</p>
-        <input type="radio" name="industry" value="tourism" style="display: none;"> 
+         
       </label>
       <label class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelB">
         <h1>Tourism</h1>
         <p>Discover the magic of new cultures, ignite your curiosity, and create lifelong memories through the adventure of tourism.</p>
-        <input type="radio" name="industry" value="tourism" style="display: none;"> 
+         
       </label>
       <label class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelC">
         <h1>Tourism</h1>
         <p>Discover the magic of new cultures, ignite your curiosity, and create lifelong memories through the adventure of tourism.</p>
-        <input type="radio" name="industry" value="tourism" style="display: none;"> 
+        
       </label>  
     </div>
 
@@ -694,17 +715,17 @@ video {
       <label class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelD">
         <h1>High Risk</h1>
         <p>Discover the magic of new cultures, ignite your curiosity, and create lifelong memories through the adventure of tourism.</p>
-        <input type="radio" name="industry" value="tourism" style="display: none;"> 
+         
       </label>
       <label class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelE">
         <h1>Low Risk</h1>
         <p>Discover the magic of new cultures, ignite your curiosity, and create lifelong memories through the adventure of tourism.</p>
-        <input type="radio" name="industry" value="tourism" style="display: none;"> 
+         
       </label>
       <label class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelF">
         <h1>Medium Risk/Moderate Risk</h1>
         <p>Discover the magic of new cultures, ignite your curiosity, and create lifelong memories through the adventure of tourism.</p>
-        <input type="radio" name="industry" value="tourism" style="display: none;"> 
+         
       </label>  
     </div>
 
@@ -713,21 +734,29 @@ video {
       <label class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelJ">
         <h1>$100,000 to $500,000</h1>
         <p>Discover the magic of new cultures, ignite your curiosity, and create lifelong memories through the adventure of tourism.</p>
-        <input type="radio" name="industry" value="tourism" style="display: none;"> 
+         
       </label>
       <label class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelH">
         <h1>$500,000 to $800,000</h1>
         <p>Discover the magic of new cultures, ignite your curiosity, and create lifelong memories through the adventure of tourism.</p>
-        <input type="radio" name="industry" value="tourism" style="display: none;"> 
+         
       </label>
       <label class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelK">
         <h1>$800,000 to $1 million</h1>
         <p>Discover the magic of new cultures, ignite your curiosity, and create lifelong memories through the adventure of tourism.</p>
-        <input type="radio" name="industry" value="tourism" style="display: none;"> 
+         
       </label>  
     </div>
 
     
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <!-- chage the click to navigate to the main page -->
+      <span class="close" onclick="hidePopup()">&times;</span>
+      <p id="popupText"></p>
+    </div>
   </div>
 
 
@@ -737,80 +766,120 @@ video {
     const labelA = document.querySelector('.labelA');
     const labelB = document.querySelector('.labelB');
     const labelC = document.querySelector('.labelC');
+
     const labelD = document.querySelector('.labelD');
     const labelE = document.querySelector('.labelE');
     const labelF = document.querySelector('.labelF');
+
     const labelJ = document.querySelector('.labelJ');
     const labelH = document.querySelector('.labelH');
     const labelK = document.querySelector('.labelK');
+
     let a = 0
 
     let step1,step2,step3
 
-    // Add click event listeners to each label
-    labelA.addEventListener('click', function() {
-      nextStep(a++)
-      step1 = 'tourism'
+    const azdazd = (var1,var2) => {
+
+      return ;
+    }
+
+    
+    /**
+     * step 1
+    */
+    labelA.addEventListener('click', () => {
+      step1 = 'tourism1'
+      nextStep()
     });
 
     labelB.addEventListener('click', function() {
-      nextStep(a++)
       step = 'tourism2'
+      nextStep()
     });
 
     labelC.addEventListener('click', function() {
-      nextStep(a++)
       step1 = 'tourism3'
+      nextStep()
     });
 
-    //step 2
+    /**
+     * step 2
+    */
     labelD.addEventListener('click', function() {
-      nextStep(a++)
       step2 = "risk1"
+      nextStep()
     });
 
     labelE.addEventListener('click', function() {
-      nextStep(a++)
       step2 = "risk2"
+      nextStep()
     });
 
     labelF.addEventListener('click', function() {
-      nextStep(a++)
       step2 = "risk3"
+      nextStep()
     });
 
-    // budget
+    
+    /**
+     * step 3
+    */
     labelJ.addEventListener('click', function() {
-      nextStep(a++)
       step3 = "budget1"
+      submitForm()
     });
 
     labelH.addEventListener('click', function() {
-      nextStep(a++)
       step3 = "budget2"
+      submitForm()
     });
 
     labelK.addEventListener('click', function() {
-      nextStep(a++)
       step3 = "budget3"
-      console.log("🚀 ~ file: index.html:136 ~ labelK.addEventListener ~ step1,step2,step3:", step1,step2,step3)
+      submitForm()
     });
 
-    function nextStep(step) {
+    let step = 1
+
+    const nextStep = () => {
       if (step === 1) {
         document.getElementById('step1').style.display = 'none';
         document.getElementById('step2').style.display = 'grid';
       } else if (step === 2) {
         document.getElementById('step2').style.display = 'none';
         document.getElementById('step3').style.display = 'grid';
-      }
+      }else if (step>2) return;
+      step++;
     }
 
-    function submitForm() {
-      // Here you can handle form submission, e.g., sending data to a server
-      alert('Form submitted!');
-      // You can also collect form data here if needed
+    const submitForm = () => {
+      if(step1=='tourism1' && step2 =='risk1' && (step3 =='budget1' || step3 =='budget2')) {
+        showPopup('result 1')
+      } else if(step1=='tourism1' && step2 =='risk2' && step3 =='budget3') {
+        showPopup('result 2')
+      } else {
+        showPopup('uconnt invest')
+      }
+
+      return;
     }
+
+
+ 
+    const showPopup = (userInput) => {
+      document.getElementById('popupText').textContent = userInput;
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    const hidePopup = () => {
+      // step = 1
+      // document.getElementById('step3').style.display = 'none';
+      // document.getElementById('step1').style.display = 'grid';
+
+      document.getElementById('popup').style.display = 'none';
+    }
+
   </script>
 
 </body>
