@@ -5,55 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="indexapp.css">
   <title>beta version</title>
+  
 </head>
 <body>
   
 
   <div class="overlay" id="overlay">
-    <div class="popup">
+    <div class="welcome-popup">
       <h1 id="message">Welcome!</h1>
       <button id="nextBtn">Continue</button>
     </div>
-    </div>
+  </div>
 
- 
-    <div id="category1">
-      <h3>Choose Industry</h3>
-      <ul>
-        <li onclick="showDescription('Tourism')">Tourism</li>
-        <li onclick="showDescription('Healthcare')">Healthcare and Pharmaceuticals</li>
-        <li onclick="showDescription('Agriculture')">Agriculture and Agribusiness</li>
-      </ul>
-      <p id="description"></p>
-    </div>
-    
-    <div id="category2" style="display: none;">
-      <h3>Choose Risk Level</h3>
-      <ul>
-        <li onclick="showDescription('High')">High Risk</li>
-        <li onclick="showDescription('Low')">Low Risk</li>
-        <li onclick="showDescription('Medium')">Medium Risk/Moderate Risk</li>
-      </ul>
-      <p id="description2"></p>
-    </div>
-    
-    <div id="category3" style="display: none;">
-      <h3>Choose Budget</h3>
-      <ul>
-        <li onclick="showDescription('100k-500k')">$100,000 to $500,000</li>
-        <li onclick="showDescription('500k-800k')">$500,000 to $800,000</li>
-        <li onclick="showDescription('800k-1m')">$800,000 to $1 million</li>
-      </ul>
-      <p id="description3"></p>
-    </div>
-    
+
 
 
 
 
   
+    
+  <div class="h-screen w-screen px-12 flex flex-col pt-40">
+
+        
+    <div id="step1" class="h-10 bg-white grid grid-cols-3 gap-6">
+      
+      <label style=" background-color: rgba(46, 139, 86, 0.598);" class=" rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelA">
+        <h1 style=" text-decoration: underline; font-weight: bolder; font-family: 'Courier New', Courier, monospace; " >" Tourism "</h1>
+        <p style="font-family: monospace">Morocco's allure extends far beyond Marrakech, Casablanca, and Fez. Cities like Chefchaouen, with its blue-washed buildings, Tangier's cultural fusion, Essaouira's coastal charm, Agadir's serene beaches, and Rabat's blend of history and modernity, offer diverse investment prospects within the country's vibrant tourism sector.</p>
+         
+      </label>
+      <label style="background-color: rgba(165, 42, 42, 0.498);" class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelB">
+        <h1 style=" text-decoration: underline; font-weight: bolder; font-family: 'Courier New', Courier, monospace;" >" Healthcare and Pharmaceuticals "</h1>
+        <p style="font-family: monospace">
+          Morocco's Healthcare and Pharmaceuticals sector shows strong potential. Backed by government support and a growing market, it offers a promising opportunity. The country's advancing healthcare infrastructure and expanding pharmaceutical market make it an attractive investment option in North Africa.</p>
+         
+      </label>
+      <label style="background-color: rgba(46, 139, 86, 0.598);" class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelC">
+        <h1 style=" text-decoration: underline; font-weight: bolder; font-family: 'Courier New', Courier, monospace;"  >" Agriculture and Agribusiness "</h1>
+        <p style="font-family: monospace" >
+          Morocco's Agriculture and Agribusiness sector offer rich potential. Supported by fertile lands, diverse produce, and government backing, it spans traditional and high-value crops. Infrastructure upgrades and strategic positioning amplify export opportunities, making it an enticing prospect for investors seeking growth and sustainability.</p>
+        
+      </label>  
+    </div>
+
+
+
+
+
+
+
+
+    
+    <div id="step2" class="h-10 bg-white grid grid-cols-3 gap-6" style="display: none;">
+      <label style="background-color: rgba(46, 139, 86, 0.598);" class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelD">
+        <h1 style=" text-decoration: underline; font-weight: bolder; font-family: 'Courier New', Courier, monospace;"  >" High Risk "</h1>
+        <p style="font-family: monospace">Investing in high-risk ventures in Morocco offers potential in sectors like tourism and renewables, but it comes with volatility tied to economic shifts and regulations. Thorough research and long-term commitment are essential to navigate these risks and capitalize on Morocco's growth prospects..</p>
+         
+      </label>
+      <label style="background-color: rgba(165, 42, 42, 0.498);" class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelE">
+        <h1 style=" text-decoration: underline; font-weight: bolder; font-family: 'Courier New', Courier, monospace;"  >" Medium Risk/Moderate Risk "</h1>
+        <p style="font-family: monospace" >Medium-risk investments in Morocco, such as real estate and manufacturing, offer steady growth with manageable volatility. Despite being less uncertain than high-risk options, they still face market fluctuations and regulations. Diversification and thorough market analysis are key to navigating these opportunities effectively.</p>
+         
+      </label>
+      <label style="background-color: rgba(46, 139, 86, 0.598);" class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelF">
+        <h1 style=" text-decoration: underline; font-weight: bolder; font-family: 'Courier New', Courier, monospace;"  >" Low Risk "</h1>
+        <p style="font-family: monospace" >Low-risk investments in Morocco, such as government bonds or stable industries, offer security with minimal volatility. While returns might be lower compared to higher-risk options, these investments provide a reliable and stable avenue, suitable for conservative investors seeking predictability.</p>
+         
+      </label>  
+    </div>
+
+
+
+
+
+
+
+
+
+    
+    <div id="step3" class="h-10 bg-white grid grid-cols-3 gap-6" style="display: none;">
+      <label style="background-color: rgba(46, 139, 86, 0.598);" class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelJ">
+        <h1  style=" text-decoration: underline; font-weight: bolder; font-family: 'Courier New', Courier, monospace;"  >" $100,000 to $500,000 "</h1>
+        <p style="font-family: monospace">investing in Morocco, with $100,000 to $500,000, spans sectors like tourism and renewables. Options include real estate, tech startups, or hospitality, but caution and research are crucial due to regulatory variations and risks.</p>
+         
+      </label>
+      <label style="background-color: rgba(165, 42, 42, 0.498);" class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelH">
+        <h1 style="  text-decoration: underline; font-weight: bolder; font-family: 'Courier New', Courier, monospace;"  >" $500,000 to $800,000 "</h1>
+        <p style=" font-family: monospace">"Investing $500,000 to $800,000 in Morocco opens doors in tourism, renewable energy, and real estate. Explore larger projects or tech innovations, but careful research and strategic planning are crucial due to regulatory challenges.</p>
+         
+      </label>
+      <label style="background-color: rgba(46, 139, 86, 0.598);" class="rounded border border-gray-400 shadow-lg p-8 max-w-60 text-center flex flex-col justify-center items-center gap-5 hover:bg-slate-200 labelK">
+        <h1 style=" text-decoration: underline; font-weight: bolder; font-family: 'Courier New', Courier, monospace;"  >" $800,000 to $1 million "</h1>
+        <p style="font-family: monospace">Investing $800,000 to $1 million in Morocco offers opportunities in real estate, renewable energy, and tech startups. Consider larger initiatives, partnerships, but thorough research and understanding local regulations are vital.</p>
+         
+      </label>  
+    </div>
+
+    
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content w-1/2 py-5 rounded">
+      <span class="close" onclick="hidePopup()">&times;</span>
+      <p id="popupTitle" style="  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bolder; font-size: 20px;" class="w-full text-center"></p>
+      <p id="popupText"  class="mt-3"></p>
+    </div>
+  </div>
+
   <script src="indexapp.js"></script>
-
-
 </body>
 </html>

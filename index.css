@@ -14,7 +14,6 @@ body {
 }
 
 
-
 nav {
   
 
@@ -149,15 +148,20 @@ font-family: 'Red Hat Display', sans-serif;
   margin-bottom: 50px;
   border-color: rgb(212, 212, 212);
   background-color:rgba(0, 0, 0, 0.826) ;
-  color: whitesmoke;
-
+  color: white;
   
+}
+.fa-microchip {
+  color:white ;
 }
 
 .try:hover{
   background-color:rgba(240, 255, 255, 0.79);
   color:black ;
   border-color:gray;
+}
+.try:hover .fa-microchip {
+  color: black; 
 }
 .parent-container {
  

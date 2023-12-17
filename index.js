@@ -9,7 +9,7 @@ function startTyping() {
       i++;
     } else {
       clearInterval(typingInterval);
-      setTimeout(startTyping, 30000); 
+      setTimeout(startTyping, 10000); 
     }
   }
 
