@@ -188,11 +188,13 @@ font-family: 'Red Hat Display', sans-serif;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 100px;
+  
  
 }
 .companies{
   display: flex;
   justify-content: center;
+
 }
 
 .bfrftr{

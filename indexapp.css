@@ -4,7 +4,11 @@ body {
   
   height: 100vh;
   margin: 0;
-
+  background-image: url('New Project (15).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
 }
 
 .overlay {
@@ -17,6 +21,7 @@ body {
   background-color:#D2D3D9;
   justify-content: center;
   align-items: center;
+  background-image: url('https://planetmorocco.com/wp-content/uploads/2020/12/heidi-kaden-NncAbldgViA-unsplash.jpeg');
 }
 
 .welcome-popup {
@@ -721,7 +726,7 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   color:rgb(7, 7, 7);
-  background-color: #82BA9A;
+  background-color: #B2A59B;
   border: 1px solid #ccc;
   padding: 20px;
   z-index: 9999;
@@ -729,7 +734,7 @@ video {
   margin-top: -px;  
   
   
-  box-shadow: 0 0 0 100vmax #ffffff;
+  box-shadow: 0 0 0 100vmax #607274;
   
 
   
@@ -750,9 +755,12 @@ video {
   padding:1px 8px;
   margin-top: -10px;
   border-radius: 155px;
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 12px #607274;
+
 }
  
 p{
   font-weight: 550;
+  font-size:large ;
 }
+
