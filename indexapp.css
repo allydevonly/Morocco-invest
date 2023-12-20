@@ -719,14 +719,15 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.popup {
+.popup {  
+  
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color:rgb(7, 7, 7);
-  background-color: #B2A59B;
+  background-color:#FAEED1 ;
   border: 1px solid #ccc;
   padding: 20px;
   z-index: 9999;
@@ -734,7 +735,7 @@ video {
   margin-top: -px;  
   
   
-  box-shadow: 0 0 0 100vmax #607274;
+  box-shadow: 0 0 0 100vmax  #B2A59B ;
   
 
   
@@ -755,11 +756,12 @@ video {
   padding:1px 8px;
   margin-top: -10px;
   border-radius: 155px;
-  box-shadow: 0px 5px 12px #607274;
+  box-shadow: 0px 5px 12px rgb(93, 93, 93);
 
 }
  
 p{
+  
   font-weight: 550;
   font-size:large ;
 }
